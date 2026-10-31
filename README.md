@@ -1,4 +1,4 @@
-# A Shared Latent Geometry of Numerical Representation in Multimodal Models
+# Beyond the Readout: A Latent Numerical Frame Shared Across Modality and Operation
 
 <p align="center">
   <b>Do multimodal models represent the same numerical result using the same internal geometry?</b>
@@ -14,14 +14,14 @@
 </p>
 
 <p align="center">
-  📄 Paper coming soon &nbsp;&nbsp;•&nbsp;&nbsp; 🧾 arXiv coming soon
+  📄 <a href="https://arxiv.org/abs/2610.37422">Read the paper on arXiv</a>
 </p>
 
 ---
 
 ## Overview
 
-This repository contains the research code accompanying **A Shared Latent Geometry of Numerical Representation in Multimodal Models**.
+This repository contains the research code accompanying **Beyond the Readout: A Latent Numerical Frame Shared Across Modality and Operation**.
 
 We study numerical representations in `Gemma4-12B-it` using matched addition and subtraction problems presented as text or rendered images. This lets us change the computational route and input modality while holding the numerical result fixed.
 
@@ -37,12 +37,12 @@ The central finding is that **shared numerical representation does not require i
 
 ## Paper
 
-**A Shared Latent Geometry of Numerical Representation in Multimodal Models**<br>
-**Oriol Juan Sabater**
+**Beyond the Readout: A Latent Numerical Frame Shared Across Modality and Operation**<br>
+**Oriol Juan Sabater, Alex Ferrando de las Morenas, Pau Rodríguez, Xavier Suau**
 
-- **Paper / arXiv:** coming soon.
+- **Paper / arXiv:** [arXiv:2610.37422](https://arxiv.org/abs/2610.37422).
 - **Thesis:** Master's Thesis in Computer Vision, September 2026.
-- **Code:** this repository; citation metadata will be updated with the public manuscript.
+- **Code:** this repository.
 
 ---
 
@@ -154,8 +154,8 @@ Other useful entry points:
 The reference results were obtained with **Linux, Python 3.10.20, PyTorch 2.11.0+cu128 and Transformers 5.17.0**, using an **RTX PRO 6000 Blackwell Max-Q GPU (approximately 96 GB)**. [requirements.txt](requirements.txt) pins this software stack, including the CUDA 12.8 PyTorch build used with that GPU.
 
 ```bash
-git clone https://github.com/urijus/A-Shared-Latent-Geometry-of-Numerical-Representation-in-Multimodal-Models.git
-cd A-Shared-Latent-Geometry-of-Numerical-Representation-in-Multimodal-Models
+git clone https://github.com/urijus/beyond-the-readout.git
+cd beyond-the-readout
 python3.10 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -223,14 +223,17 @@ These checks exercise input consistency, padding, PCA seeding, cache validity an
 
 ## Citation
 
-Citation metadata will be updated with the public manuscript. For now:
+If you use this work, please cite the arXiv paper:
 
 ```bibtex
-@misc{juan2026sharedlatentgeometry,
-  title  = {A Shared Latent Geometry of Numerical Representation in Multimodal Models},
-  author = {Juan Sabater, Oriol},
-  year   = {2026},
-  note   = {Master's Thesis in Computer Vision. Manuscript forthcoming.}
+@misc{juansabater2026beyondreadout,
+  title         = {Beyond the Readout: A Latent Numerical Frame Shared Across Modality and Operation},
+  author        = {Juan Sabater, Oriol and Ferrando de las Morenas, Alex and Rodríguez, Pau and Suau, Xavier},
+  year          = {2026},
+  eprint        = {2610.37422},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2610.37422}
 }
 ```
 
