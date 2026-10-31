@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  📄 <a href="https://arxiv.org/abs/2610.37422">Read the paper on arXiv</a>
+  <a href="https://arxiv.org/abs/2610.37422">Read the paper on arXiv</a>
 </p>
 
 ---
